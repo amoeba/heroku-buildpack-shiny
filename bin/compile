@@ -59,7 +59,7 @@ export PKG_CONFIG_PATH=/app/vendor/cairo/lib/pkgconfig:/app/vendor/fontconfig/li
 export R_INCLUDE=/app/vendor/R/lib64/R/include
 
 # set the CRAN mirror and run the init.r program
-if [ -f $BUILD_DIR/packages.R ]; then
+if [ -f "$BUILD_DIR/packages.R" ]; then
   echo "Installing packages from packages.R" | indent
   mkdir -p /app/vendor/R/lib64/R/doc/html
   touch /app/vendor/R/lib64/R/doc/html/R.css
